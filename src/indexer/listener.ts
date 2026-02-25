@@ -23,10 +23,10 @@ export async function startListerner() {
         blockNumber: event.log.blockNumber,
         from,
         to,
-        value: value.toString()
+        value: ethers.formatUnits(value, 6)
       }
     })
-    console.log(`Saved ${from} -> ${to} | ${value.toString()} units`);
+    console.log(`Saved ${from} -> ${to} | ${ethers.formatUnits(value, 6)} USDC`);
   })
 }
 startListerner().catch((error) => {
