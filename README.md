@@ -12,3 +12,6 @@ This project currently indexes USDC transfers only. To add another ERC20 token, 
 SQLite is used for local development
 
 ![alt text](image.png)
+
+
+api endpoint is http://localhost:3000/api/events
